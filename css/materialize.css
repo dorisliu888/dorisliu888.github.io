@@ -2371,7 +2371,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif;
+  font-family: sans serif;
   /* 1 */
   font-size: 100%;
   /* 1 */
