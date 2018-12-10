@@ -24,23 +24,6 @@ $('.carousel.carousel-slider').carousel({
   fullWidth: true,
   indicators:true
 });
-/*
-function scrollDown() {
-  $("html, body").animate({ scrollTop: 2000 }, "slow");
-}
-
-$("body").on("click", "#scrollthis", scrollDown);
-
-$(window).scroll(function() {
-    if($(window).scrollTop() > 0) {
-          //set event handler to #scroll with your scroll function
-          $("body").off("click", "#scrollthis", scrollDown);
-    } else {
-          //unset event handler
-          $("body").on("click", "#scrollthis", scrollDown);
-    }
-});
-*/
 
 $("#scrollthis").click(function() {
   $('html,body').animate({
