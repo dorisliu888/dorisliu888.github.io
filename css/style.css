@@ -7,7 +7,7 @@
 nav .brand-logo {
   font-weight:200;
   font-family:'Kaushan Script',cursive;
-  padding:10px 0 0 0;
+  padding:5px 0 0 0;
   font-size:35px;
   color: #000;
 }
@@ -24,8 +24,8 @@ nav ul li{
 nav ul a{
   font-weight:200;
   font-size:21px;
-  padding-top: 13px;
-  padding-bottom:3px;
+  padding-top: 1px;
+  padding-bottom:1px;
   color: #000;
 }  
 
@@ -33,12 +33,12 @@ nav {
   position:fixed; 
   margin:0;
   top:0; 
-  height:80px;
+  height:65px;
   z-index:9000;
   background-color: #FFF;
 }
 .sidenav{
-  padding-top:80px;
+  padding-top:65px;
 }
 .sidenav li a{
   font-size:17px;
@@ -52,7 +52,7 @@ p {
 }
 
 .sidenav-trigger {
-  padding-top:9px;
+  padding-top:3px;
   color: #000;
 }
 
@@ -116,10 +116,25 @@ p {
     }
   }
   @media only screen and (min-width : 420px) {
+    .modal-overlay {
+      position: fixed;
+      z-index: 9990;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background: #000;
+      display: none;
+      will-change: opacity;
+    }
     .modal.modal-fixed-footer {
       padding: 0;
+      z-index:9999;
+      margin:30px auto;
       width:90%;
-      height: 90%;
+      height: 95%;
     }
   }
     @media only screen and (min-width : 500px) {
