@@ -82,67 +82,74 @@ p {
     width: 100%;
   }
 
-@media only screen and (min-width : 992px) {
-  .parallax-container { 
-    top:0;
-  } 
-}
-
-@media only screen and (max-width : 992px) {
-  .parallax-container { 
-    top:0;
-  }
-}
-@media only screen and (max-width : 800px) {
-
-  .modal.modal-fixed-footer {
-    padding: 0;
-    width:80%;
-    height: 50%;
-  }
+  @media only screen and (max-width : 420px) {
+    .parallax-container { 
+       height:740px;
+    } 
   
-}
-@media only screen and (max-width : 500px) {
-  .modal.modal-fixed-footer {
-  padding: 0;
-  width:95%;
-  height: 95%;
-}
-}
-@media only screen and (max-width : 420px) {
-  .parallax-container { 
-     height:740px;
-  } 
+    #shifted {
+      padding-top:50px;
+    }
+    .col {
+      padding:0;
+    }
+    b {
+      font-weight:200;
+    }
+    p {
+      line-height:1em;
+      text-shadow:0px 8px 10px black;
+      font-weight:200;
+    }
+    .slider .indicators {
+      position: absolute;
+      text-align: center;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    .modal.modal-fixed-footer {
+      padding: 0;
+      width:95%;
+      height: 50%;
+    }
+  }
+  @media only screen and (min-width : 420px) {
+    .modal.modal-fixed-footer {
+      padding: 0;
+      width:90%;
+      height: 90%;
+    }
+  }
+    @media only screen and (min-width : 500px) {
+      .modal.modal-fixed-footer {
+        padding: 0;
+        width:95%;
+        height: 95%;
+      }
+    }
+    
+    @media only screen and (min-width : 800px) {
 
-  #shifted {
-    padding-top:50px;
-  }
-  .col {
-    padding:0;
-  }
-  b {
-    font-weight:200;
-  }
-  p {
-    line-height:1em;
-    text-shadow:0px 8px 10px black;
-    font-weight:200;
-  }
-  .slider .indicators {
-    position: absolute;
-    text-align: center;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-  }
-  .modal.modal-fixed-footer {
-    padding: 0;
-    width:95%;
-    height: 50%;
-  }
-  
-}
+      .modal.modal-fixed-footer {
+        padding: 0;
+        width:80%;
+        height: 80%;
+      }
+      
+    }
+    @media only screen and (max-width : 992px) {
+      .parallax-container { 
+        top:0;
+      }
+    }
+    @media only screen and (min-width : 992px) {
+      .parallax-container { 
+        top:0;
+      } 
+    }
+
 .myslider img {
   position:relative;
   margin:auto;
