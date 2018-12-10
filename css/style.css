@@ -97,8 +97,8 @@ p {
 
   .modal.modal-fixed-footer {
     padding: 0;
-    width:95%;
-    height: 80%;
+    width:80%;
+    height: 50%;
   }
   
 }
@@ -106,7 +106,7 @@ p {
   .modal.modal-fixed-footer {
   padding: 0;
   width:95%;
-  height: 90%;
+  height: 95%;
 }
 }
 @media only screen and (max-width : 420px) {
@@ -139,7 +139,7 @@ p {
   .modal.modal-fixed-footer {
     padding: 0;
     width:95%;
-    height: 60%;
+    height: 50%;
   }
   
 }
@@ -160,51 +160,61 @@ p {
 /* Hide the images by default */
 .myslider-item-1{
   height:100%;
+  width:100%;
   display: none;
 }
 /* Hide the images by default */
 .myslider-item-2{
   height:100%;
+  width:100%;
   display: none;
 }
 /* Hide the images by default */
 .myslider-item-3{
   height:100%;
+  width:100%;
   display: none;
 }
 /* Hide the images by default */
 .myslider-item-4{
   height:100%;
+  width:100%;
   display: none;
 }
 /* Hide the images by default */
 .myslider-item-5{
   height:100%;
+  width:100%;
   display: none;
 }
 /* Hide the images by default */
 .myslider-item-6{
   height:100%;
+  width:100%;
   display: none;
 }
 /* Hide the images by default */
 .myslider-item-7{
   height:100%;
+  width:100%;
   display: none;
 }
 /* Hide the images by default */
 .myslider-item-8{
   height:100%;
+  width:100%;
   display: none;
 }
 /* Hide the images by default */
 .myslider-item-9{
   height:100%;
+  width:100%;
   display: none;
 }
 /* Hide the images by default */
 .myslider-item-10{
   height:100%;
+  width:100%;
   display: none;
 }
 
