@@ -3,7 +3,7 @@
   var introductionEl = $('div.introduction'),
       introductionElOffset = introductionEl.offset().top/2,
       documentEl = $(document);
-   
+
   documentEl.on('scroll', function() {
       if (documentEl.scrollTop() > introductionElOffset && introductionEl.hasClass('hidden) ) {
  	introductionEl.removeClass('hidden');
@@ -26,8 +26,7 @@ $(".carousel.carousel-slider").carousel({
 });
 
 $("#scrollthis").click(function() {
-  $("html,body").animate(
-    {
+  $("html,body").animate({
       scrollTop: $(".page-footer").offset().top
     },
     "fast"
@@ -40,3 +39,8 @@ $("#scrollthis").click(function() {
     $(".parallax").parallax();
   }); // end of document ready
 })(jQuery); // end of jQuery name space
+
+
+$('#brand-click-icon').click(function() {
+  window.href = 'https://linkedin.com/in/dorisliu888';
+});
