@@ -4,13 +4,6 @@
  * the core Materialize files in the future
  *
  */
-nav .brand-logo {
-  font-weight: 200;
-  font-family: "Kaushan Script", cursive;
-  padding: 5px 0 0 0;
-  font-size: 35px;
-  color: #000;
-}
 h3 {
   text-shadow: 0px 8px 10px black;
   font-size: 70px;
@@ -129,7 +122,7 @@ p {
   .modal.modal-fixed-footer {
     padding: 0;
     width: 95%;
-    height: 50%;
+    height: auto;
   }
 }
 @media only screen and (min-width: 420px) {
@@ -151,14 +144,14 @@ p {
     z-index: 9999;
     margin: 30px auto;
     width: 90%;
-    height: 95%;
+    height: auto;
   }
 }
 @media only screen and (min-width: 500px) {
   .modal.modal-fixed-footer {
     padding: 0;
     width: 95%;
-    height: 95%;
+    height: auto;
   }
 }
 
@@ -166,7 +159,7 @@ p {
   .modal.modal-fixed-footer {
     padding: 0;
     width: 80%;
-    height: 80%;
+    height: auto;
   }
 }
 @media only screen and (max-width: 992px) {
