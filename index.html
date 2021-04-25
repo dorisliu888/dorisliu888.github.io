@@ -1,253 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="user-scalable=no width=device-width,
-  initial-scale=1.0 maximum-scale=1, minimum-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Doris Liu</title>
-  <link rel="icon" href="../images/me/doris2020icon.png">
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!-- Lightbox CSS-->
+  <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
+  <!-- Google fonts-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&amp;display=swap">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.blue.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="images/me/doris2020icon.png">
+  <!-- Tweaks for older IEs-->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 
 <body>
-  <nav role="navigation">
-    <div class="nav-wrapper container">
-      <div class="brand-logo" style="height: 50px; width: 50px; border-radius: 25px; overflow: hidden; padding: 0; margin-top: 7px;">
-        <img height=50 width=50 style="display: inline-block;" src="../images/me/doris2020.jpeg" />
+  <div class="sidebar">
+    <div class="sidebar-inner d-flex flex-column">
+      <div class="px-4 pt-5 pb-4"><a href="images/me/doris2020.jpeg"><img src="images/me/doris2020.jpeg" alt=""
+            width="200" style="border-radius: 45px;"></a></div>
+      <div class="sidebar-menu-holder">
+        <ul class="sidebar-menu list-unstyled">
+          <li class="mb-2 pb-1">
+            <!-- Link--><a class="sidebar-link h6 text-uppercase letter-spacing-2 font-weight-bold text-small active"
+              href="index.html">Portfolio</a>
+          </li>
+          <li class="mb-2 pb-1">
+            <!-- Link--><a class="sidebar-link h6 text-uppercase letter-spacing-2 font-weight-bold text-small"
+              href="about.html">About Me</a>
+          </li>
+          <li class="mb-2 pb-1">
+            <!-- Link--><a class="sidebar-link h6 text-uppercase letter-spacing-2 font-weight-bold text-small"
+              href="resumes/Doris_Liu_Resume_2021.PDF">Resume</a>
+          </li>
+        </ul>
       </div>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="index.html">Me</a></li>
-        <li><a href="views/portfolio.html">Portfolio</a></li>
-        <li><a id="scrollthis" href="#">Contacts</a></li>
-        <li><a href="resumes/Doris_Liu_Resume_2021.pdf">Resume</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="index.html">About Me</a></li>
-        <li><a href="views/portfolio.html">Portfolio</a></li>
-        <li><a href="#" id="droppable123">Contacts </a>
-          <div id="dropdownthis123">
-            <ul>
-              <li><span><a href="mailto:dol121@ucsd.edu" class="fa fa-envelope"></a></span><a class="black-text" href="mailto:dol121@ucsd.edu"> dol121@ucsd.edu</a></li>
-              <li><span><a href="https://linkedin.com/in/dorisliu888" class="fa fa-linkedin"></a></span><a class="black-text" href="https://linkedin.com/in/dorisliu888"> linkedin/dorisliu</a></li>
-              <li><span><a href="https://www.facebook.com/doris.liu.501151" class="fa fa-facebook"></a></span><a class="black-text" href="https://www.facebook.com/doris.liu.501151"> facebook/dorisliu</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="resumes/Doris_Liu_Resume_2021.pdf">Resume</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-
-  <div id="index-banner" class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <!-- <div class="doris-icon"></div> -->
-      <div class="container">
-        <div class="col s12 center">
-
-          <div class="introduction" style="margin-top: 100px;">
-            <h3>Hi! I'm Doris!</h3>
-            <p>An aspiring Urban Designer/Planner/Drafter who is detail-oriented, hard-working, and persistent. My goal has always been to make an impact on the world with my work. I am skilled in the following areas...</p>
-          </div>
-        </div>
+      <div class="px-4 py-3">
+        <ul class="list-inline list-social mb-3">
+          <li class="list-inline-item"><a class="reset-anchor" href="https://www.linkedin.com/in/dorisliu888/"><i
+                class="fab fa-linkedin"></i></a></li>
+          <li class="list-inline-item"><a class="reset-anchor" href="mailto:doris.liu7646@gmail.com"><i
+                class="fas fa-envelope"></i></a></li>
+        </ul>
       </div>
     </div>
-    <div class="parallax"><img src="images/minecraft/Minecraft 12_7_2018 10_57_19 PM.png"></div>
   </div>
-
-  <div class="container">
-    <div class="section no-pad-bot">
-
-      <div class="row">
-        <div class="col s12 center">
-          <p style="text-shadow:0px 0px 0px black;font-size:40px;font-weight:200;">
-            Urban Design</p>
-        </div>
-      </div>
-
+  <div class="page-holder">
+    <div class="px-4 d-block d-lg-none">
+      <!-- navbar-->
+      <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light px-0">
+          <button class="navbar-toggler navbar-toggler-right text-sm text-uppercase mt-4" type="button"
+            data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+              <rect width="100" height="8"></rect>
+              <rect y="30" width="100" height="8"></rect>
+              <rect y="60" width="100" height="8"></rect>
+            </svg>
+          </button>
+        </nav>
+      </header>
     </div>
-  </div>
-
-  <div id="index-banner" class="parallax-container valign-wrapper">
-    <div class="parallax"><img width=100vw src="images/designathon2020/UCSD USP Designathon Group Standing.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section no-pad-bot">
-
-      <div class="row">
-        <div class="col s12 center">
-          <p style="text-shadow:0px 0px 0px black;font-size:40px;font-weight:200;">
-            CAD Drafting / Sketching</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div id="index-banner" class="parallax-container valign-wrapper">
-    <div class="parallax"><img width=100vw src="images/workshops/AutoCAD Workshop.png" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section no-pad-bot">
-
-      <div class="row">
-        <div class="col s12 center">
-          <p style="text-shadow:0px 0px 0px black;font-size:40px;font-weight:200;">
-            UI/UX Product Design</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div id="index-banner" class="parallax-container valign-wrapper">
-    <div class="parallax"><img width=100vw src="images/apps/Shoppy Design.png" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section no-pad-bot">
-
-      <div class="row">
-        <div class="col s12 center">
-          <p style="text-shadow:0px 0px 0px black;font-size:40px;font-weight:200;">
-            Interior Design</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div id="index-banner" class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="images/minecraft/minecraftmansion(4).png" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section no-pad-bot">
-
-      <div class="row">
-        <div class="col s12 center" id="shifted" style="padding-top:10px;">
-          <p style="text-shadow:0px 0px 0px black;font-size:40px;font-weight:200;">
-            3-D Modeling</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div id="index-banner" class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="images/backgrounds/interior.png" alt="Unsplashed background img 3"></div>
-  </div>
-
-  <div class="container">
-    <div class="section no-pad-bot">
-
-      <div class="row">
-        <div class="col s12 center" id="shifted" style="padding-top:15px;">
-          <p style="text-shadow:0px 0px 0px black;font-size:40px;font-weight:200;">
-            Structural Design</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div id="index-banner" class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="images/minecraft/minecraftmansion(2).png" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section no-pad-bot">
-
-      <div class="row">
-        <div class="col s12 center">
-          <p style="text-shadow:0px 0px 0px black;font-size:40px;font-weight:200;">
-            Floor Planning</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div id="index-banner" class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="images/backgrounds/collage.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section no-pad-bot">
-
-      <div class="row">
-        <div class="col s12 center">
-          <p style="text-shadow:0px 0px 0px black;font-size:40px;font-weight:200;">
-            Site Planning</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div id="index-banner" class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="images/backgrounds/siteplan3d.png" alt="Unsplashed background img 3"></div>
-  </div>
-
-  <footer class="page-footer white">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m3">
-          <h5 class="black-text" style="font-weight:200;">Summary</h5>
-          <br><img src="images/logos/myucsd.png"></img>
-        </div>
-        <div class="col s12 m6">
-          <br><br>
-          <p class="black-text" style="text-shadow:0px 0px 0px black;color:black;font-size:18px;line-height:2em;font-weight:20;">
-            B.A. Urban Studies & Planning '21<br>
-            Design Minor<br></p>
-        </div>
-        <div class="col s12 m3">
-          <h5 class="black-text" style="font-weight:200;">CONTACTS</h5>
-          <ul>
-            <li><a href="mailto:dol121@ucsd.edu" class="fa fa-envelope"></a><a class="black-text" href="mailto:dol121@ucsd.edu"> dol121@ucsd.edu</a></li>
-            <li><a href="https://linkedin.com/in/dorisliu888" class="fa fa-linkedin"></a><a class="black-text" href="https://linkedin.com/in/dorisliu888"> linkedin/dorisliu</a></li>
-            <li><a href="https://www.facebook.com/doris.liu.501151" class="fa fa-facebook"></a><a class="black-text" href="https://www.facebook.com/doris.liu.501151"> facebook/dorisliu</a></li>
-          </ul>
-        </div>
+    <div class="px-4 responsive-container">
+      <div class="container-fluid">
+        <h1 class="mb-4">AutoCAD</h1>
+        <div class="masonry-wrapper" id="autocad-section"></div>
+        <h1 class="mb-4">Revit</h1>
+        <div class="masonry-wrapper" id="revit-section"></div>
       </div>
     </div>
-  </footer>
-</body>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
-<script>
-  $("#droppable123").click(function() {
-    if ($("#dropdownthis123").height() == 0) {
-      $("#dropdownthis123").animate({
-        height: '190px'
-      }, 200);
-      $("#dropdownthis123").css("visibility", "visible");
-    } else if ($("#dropdownthis123").height() == 190) {
-      $("#dropdownthis123").animate({
-        height: '0px'
-      }, 200);
-      $("#dropdownthis123").css("visibility", "hidden");
+  </div>
+  <!-- JavaScript files-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/masonry-layout/masonry.pkgd.min.js"></script>
+  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+  <script src="js/front.js"></script>
+  <script>
+    function injectSvgSprite(path) {
+      var ajax = new XMLHttpRequest();
+      ajax.open("GET", path, true);
+      ajax.send();
+      ajax.onload = function (e) {
+        var div = document.createElement("div");
+        div.className = 'd-none';
+        div.innerHTML = ajax.responseText;
+        document.body.insertBefore(div, document.body.childNodes[0]);
+      }
     }
-  });
-</script>
+    injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
+  </script>
+  <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script type="module" src="js/projects.js"></script>
+</body>
 
 </html>

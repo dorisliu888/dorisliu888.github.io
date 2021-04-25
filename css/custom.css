@@ -1,0 +1,10 @@
+/* your styles go here */
+.responsive-container {
+    margin-top: 3rem !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .responsive-container {
+        margin-top: 0.5rem !important;
+    }
+}
