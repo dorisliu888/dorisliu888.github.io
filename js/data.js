@@ -31,39 +31,39 @@ const autocadProjects = [
   },
   {
     type: "multi-family",
-    title: "multi-family - Original Ground Floor",
+    title: "Multi-Family - Original Ground Floor",
     path: "projects/cad/multifamily/Multi_Family-Original_Ground_Floor",
     description: "",
   },
   {
     type: "multi-family",
-    title: "multi-family - Garage to Res Units",
+    title: "Multi-Family - Garage to Res Units",
     path:
       "projects/cad/multifamily/Multi_Family-Ground_Floor-Garage_to_Res_Units",
     description: "",
   },
   {
     type: "multi-family",
-    title: "multi-family - 1st Floor",
+    title: "Multi-Family - 1st Floor",
     path: "projects/cad/multifamily/Multi_Family-1st_Floor",
     description: "",
   },
   {
     type: "multi-family",
-    title: "multi-family - 2nd Floor",
+    title: "Multi-Family - 2nd Floor",
     path: "projects/cad/multifamily/Multi_Family-2nd_Floor",
     description: "",
   },
   {
     type: "multi-family",
-    title: "multi-family - West North Elevation Plans",
+    title: "Multi-Family - West North Elevation Plans",
     path:
       "projects/cad/multifamily/Multi_Family-West_North_Elevation_Plans",
     description: "",
   },
   {
     type: "multi-family",
-    title: "multi-family - East South Elevation Plans",
+    title: "Multi-Family - East South Elevation Plans",
     path:
       "projects/cad/multifamily/Multi_Family-East_South_Elevation_Plans",
     description: "",
