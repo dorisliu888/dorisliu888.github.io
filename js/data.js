@@ -1,6 +1,6 @@
 const autocadProjects = [
   {
-    type: "tutorial",
+    type: "self-made tutorial",
     title: "AutoCAD Workshop",
     path: "projects/workshops/Architecture_at_UCSD_AutoCAD_Workshop_2021.pdf",
     description: "",
@@ -72,7 +72,7 @@ const autocadProjects = [
 
 const revitProjects = [
   {
-    type: "tutorial",
+    type: "self-made tutorial",
     title: "Revit Workshop",
     path: "projects/workshops/Architecture_at_UCSD_Revit_Workshop_2021.pdf",
     description: "",
