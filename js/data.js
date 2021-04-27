@@ -57,15 +57,13 @@ const autocadProjects = [
   {
     type: "multi-family",
     title: "Multi-Family - West North Elevation Plans",
-    path:
-      "projects/cad/multifamily/Multi_Family-West_North_Elevation_Plans",
+    path: "projects/cad/multifamily/Multi_Family-West_North_Elevation_Plans",
     description: "",
   },
   {
     type: "multi-family",
     title: "Multi-Family - East South Elevation Plans",
-    path:
-      "projects/cad/multifamily/Multi_Family-East_South_Elevation_Plans",
+    path: "projects/cad/multifamily/Multi_Family-East_South_Elevation_Plans",
     description: "",
   },
 ];
@@ -99,30 +97,6 @@ const revitProjects = [
     type: "ucsd apartment",
     title: "Marshall Lowers - 4th Floor",
     path: "projects/cad/ml/ML-Building_D-4th_Floor_Plan",
-    description: "",
-  },
-  {
-    type: "ucsd apartment",
-    title: "Marshall Lowers - North Elevation Plan",
-    path: "projects/cad/ml/ML-Building_D-North_Elevation",
-    description: "",
-  },
-  {
-    type: "ucsd apartment",
-    title: "Marshall Lowers - East Elevation Plan",
-    path: "projects/cad/ml/ML-Building_D-East_Elevation",
-    description: "",
-  },
-  {
-    type: "ucsd apartment",
-    title: "Marshall Lowers - South Elevation Plan",
-    path: "projects/cad/ml/ML-Building_D-South_Elevation",
-    description: "",
-  },
-  {
-    type: "ucsd apartment",
-    title: "Marshall Lowers - West Elevation Plan",
-    path: "projects/cad/ml/ML-Building_D-West_Elevation",
     description: "",
   },
   {
