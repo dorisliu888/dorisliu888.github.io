@@ -70,35 +70,40 @@
     <div class="px-4 responsive-container">
       <div class="container-fluid">
         <h1 class="mb-4">AutoCAD</h1>
-        <div class="masonry-wrapper" id="autocad-section"></div>
+        <div id="autocad-section-1" class="masonry-wrapper mb-4"></div>
+        <div id="autocad-section-2" class="masonry-wrapper mb-4"></div>
+        <div id="autocad-section-3" class="masonry-wrapper mb-4"></div>
         <h1 class="mb-4">Revit</h1>
-        <div class="masonry-wrapper" id="revit-section"></div>
+        <div id="revit-section-1" class="masonry-wrapper mb-4"></div>
+        <div id="revit-section-2" class="masonry-wrapper mb-4"></div>
+        <div id="revit-section-3" class="masonry-wrapper mb-4"></div>
+        <div id="revit-section-4" class="masonry-wrapper mb-4"></div>
+        <div id="revit-section-5" class="masonry-wrapper mb-4"></div>
       </div>
     </div>
-  </div>
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/masonry-layout/masonry.pkgd.min.js"></script>
-  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="vendor/lightbox2/js/lightbox.min.js"></script>
-  <script src="js/front.js"></script>
-  <script>
-    function injectSvgSprite(path) {
-      var ajax = new XMLHttpRequest();
-      ajax.open("GET", path, true);
-      ajax.send();
-      ajax.onload = function (e) {
-        var div = document.createElement("div");
-        div.className = 'd-none';
-        div.innerHTML = ajax.responseText;
-        document.body.insertBefore(div, document.body.childNodes[0]);
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/masonry-layout/masonry.pkgd.min.js"></script>
+    <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+    <script src="js/front.js"></script>
+    <script>
+      function injectSvgSprite(path) {
+        var ajax = new XMLHttpRequest();
+        ajax.open("GET", path, true);
+        ajax.send();
+        ajax.onload = function (e) {
+          var div = document.createElement("div");
+          div.className = 'd-none';
+          div.innerHTML = ajax.responseText;
+          document.body.insertBefore(div, document.body.childNodes[0]);
+        }
       }
-    }
-    injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
-  </script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <script type="module" src="js/projects.js"></script>
+      injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
+    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script type="module" src="js/projects.js"></script>
 </body>
 
 </html>
