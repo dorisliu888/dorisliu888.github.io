@@ -29,28 +29,12 @@ const getProjectItem = (project) => `
 const autocadSection1 = document.getElementById("autocad-section-1");
 const autocadSection2 = document.getElementById("autocad-section-2");
 const autocadSection3 = document.getElementById("autocad-section-3");
-autocadProjects.forEach((project) => {
-  const projectItem = getProjectItem(project);
-  switch (project.type) {
-    case projectTypes.workshop:
-      autocadSection1.innerHTML += projectItem;
-      break;
-    case projectTypes.adu:
-      autocadSection2.innerHTML += projectItem;
-      break;
-    case projectTypes.mfh:
-      autocadSection3.innerHTML += projectItem;
-      break;
-    default:
-      break;
-  }
-});
-
 const revitSection1 = document.getElementById("revit-section-1");
 const revitSection2 = document.getElementById("revit-section-2");
 const revitSection3 = document.getElementById("revit-section-3");
 const revitSection4 = document.getElementById("revit-section-4");
 const revitSection5 = document.getElementById("revit-section-5");
+
 revitProjects.forEach((project) => {
   const projectItem = getProjectItem(project);
   const title = project.title.toLowerCase();
@@ -70,6 +54,23 @@ revitProjects.forEach((project) => {
       else if (title.includes("front left") || title.includes("front right"))
         revitSection4.innerHTML += projectItem;
       else revitSection5.innerHTML += projectItem;
+      break;
+    default:
+      break;
+  }
+});
+
+autocadProjects.forEach((project) => {
+  const projectItem = getProjectItem(project);
+  switch (project.type) {
+    case projectTypes.workshop:
+      autocadSection1.innerHTML += projectItem;
+      break;
+    case projectTypes.adu:
+      autocadSection2.innerHTML += projectItem;
+      break;
+    case projectTypes.mfh:
+      autocadSection3.innerHTML += projectItem;
       break;
     default:
       break;
