@@ -6,8 +6,8 @@ const getProjectItem = (project) => `
             <div class="position-relative">
             <ul class="list-inline listing-tags m-0">
                 <li class="list-inline-item"><a class="reset-anchor font-weight-normal text-gray text-small"
-                    href="${project.path}.pdf">${project.type}</a></li>
-            </ul><a class="reset-anchor d-block listing-img-holder" href="${project.path}.pdf"><img
+                    href="${project.link || project.path + '.pdf'}">${project.type}</a></li>
+            </ul><a class="reset-anchor d-block listing-img-holder" href="${project.link || project.path + '.pdf'}"><img
                 class="img-fluid" src="${project.path}.PNG" alt="${project.title}" height="400">
                 <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Take a closer
                     look</span>
@@ -17,7 +17,7 @@ const getProjectItem = (project) => `
                 </p>
             </a>
             </div>
-            <div class="py-3"><a class="reset-anchor" href="${project.path}.pdf">
+            <div class="py-3"><a class="reset-anchor" href="${project.link || project.path + '.pdf'}">
                 <h2 class="h5 listing-item-heading">${project.title}</h2>
             </a>
             <p class="text-small mb-0 listing-item-description">${project.description}</p>
@@ -30,30 +30,12 @@ const autocadSection1 = document.getElementById("autocad-section-1");
 const autocadSection2 = document.getElementById("autocad-section-2");
 const autocadSection3 = document.getElementById("autocad-section-3");
 const revitSection1 = document.getElementById("revit-section-1");
-const revitSection2 = document.getElementById("revit-section-2");
-const revitSection3 = document.getElementById("revit-section-3");
-const revitSection4 = document.getElementById("revit-section-4");
-const revitSection5 = document.getElementById("revit-section-5");
 
 revitProjects.forEach((project) => {
   const projectItem = getProjectItem(project);
-  const title = project.title.toLowerCase();
   switch (project.type) {
     case projectTypes.workshop:
       revitSection1.innerHTML += projectItem;
-      break;
-    case projectTypes.ml:
-      if (
-        title.includes("floor") ||
-        title.includes("front face") ||
-        title.includes("back face")
-      )
-        revitSection2.innerHTML += projectItem;
-      else if (title.includes("left face") || title.includes("right face"))
-        revitSection3.innerHTML += projectItem;
-      else if (title.includes("front left") || title.includes("front right"))
-        revitSection4.innerHTML += projectItem;
-      else revitSection5.innerHTML += projectItem;
       break;
     default:
       break;
