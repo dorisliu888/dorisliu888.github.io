@@ -7,27 +7,21 @@ const projectTypes = {
 
 const revitProjects = [
   {
+    type: projectTypes.ml,
+    title: "Marshall Lowers Redesign",
+    path: "projects/workshops/ML-Redesign-Poster",
+    link: "https://sites.google.com/ucsd.edu/archatucsd-2021-building/home",
+    description: "",
+  },
+  {
     type: projectTypes.workshop,
     title: "Revit Workshop",
     path: "projects/workshops/Architecture_at_UCSD_Revit_Workshop_2021",
     description: "",
   },
-  {
-    type: projectTypes.ml,
-    title: "Marshall Lowers Redesign",
-    link: 'https://sites.google.com/ucsd.edu/archatucsd-2021-building/home',
-    path: "projects/workshops/ML-Redesign-Poster",
-    description: "",
-  },
 ];
 
 const autocadProjects = [
-  {
-    type: projectTypes.workshop,
-    title: "AutoCAD Workshop",
-    path: "projects/workshops/Architecture_at_UCSD_AutoCAD_Workshop_2021",
-    description: "",
-  },
   {
     type: projectTypes.adu,
     title: "ADU Plan - Original",
@@ -61,8 +55,7 @@ const autocadProjects = [
   {
     type: projectTypes.mfh,
     title: "Multi-Family - Garage to Res Units",
-    path:
-      "projects/cad/multifamily/Multi_Family-Ground_Floor-Garage_to_Res_Units",
+    path: "projects/cad/multifamily/Multi_Family-Ground_Floor-Garage_to_Res_Units",
     description: "",
   },
   {
@@ -87,6 +80,12 @@ const autocadProjects = [
     type: projectTypes.mfh,
     title: "Multi-Family - East South Elevation Plans",
     path: "projects/cad/multifamily/Multi_Family-East_South_Elevation_Plans",
+    description: "",
+  },
+  {
+    type: projectTypes.workshop,
+    title: "AutoCAD Workshop",
+    path: "projects/workshops/Architecture_at_UCSD_AutoCAD_Workshop_2021",
     description: "",
   },
 ];
