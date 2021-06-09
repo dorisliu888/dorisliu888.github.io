@@ -9,7 +9,7 @@ const revitProjects = [
   {
     type: projectTypes.ml,
     title: "Marshall Lowers Redesign",
-    path: "projects/workshops/ML-Redesign-Poster",
+    path: "projects/cad/ml/ML-Redesign-Poster",
     link: "https://sites.google.com/ucsd.edu/archatucsd-2021-building/home",
     description: "",
   },
