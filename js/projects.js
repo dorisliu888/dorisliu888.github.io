@@ -58,13 +58,13 @@ revitProjects.forEach((project) => {
 autocadProjects.forEach((project) => {
   const projectItem = getProjectItem(project);
   switch (project.type) {
-    case projectTypes.workshop:
+    case projectTypes.adu:
       autocadSection1.innerHTML += projectItem;
       break;
-    case projectTypes.adu:
+    case projectTypes.mfh:
       autocadSection2.innerHTML += projectItem;
       break;
-    case projectTypes.mfh:
+    case projectTypes.workshop:
       autocadSection3.innerHTML += projectItem;
       break;
     default:
